@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style: none;}
+body{ background: #331F97;}
+.all{ width:1000px; height:460px;margin:100px auto;}
+.all li{ width:320px; height:426px; background:url(img/01.jpg) no-repeat; float:left; cursor: pointer;}
+.all .current{ width:360px; height:458px; background:url(img/01big.jpg) no-repeat; margin-top:-15px;}
+</style>
+<script>
+window.onload=function(){
+var li01 =document.getElementById('li01')
+var li02 =document.getElementById('li02')
+var li03 =document.getElementById('li03')
+	li01.onmouseover=function(){
+		li01.className='current'	
+	}
+	li01.onmouseout=function(){
+		li01.className=''	
+	}
+	
+	li02.onmouseover=function(){
+		li02.className='current'
+		li02.style.background='url(img/02big.jpg) no-repeat'	
+	}
+	li02.onmouseout=function(){
+		li02.className=''
+		li02.style.background='url(img/02.jpg) no-repeat'	
+	}
+	
+	li03.onmouseover=function(){
+		li03.className='current'
+		li03.style.background='url(img/03big.jpg) no-repeat'	
+	}
+	li03.onmouseout=function(){
+		li03.className=''
+		li03.style.background='url(img/03.jpg) no-repeat'	
+	}
+	
+	
+	
+}
+</script>
+</head>
+
+<body>
+<div class="all">
+	<ul>
+		<li id="li01"></li>
+		<li id="li02" style="background:url(img/02.jpg) no-repeat"></li>
+		<li id="li03" style="background:url(img/03.jpg) no-repeat"></li>
+	</ul>
+</div>
+</body>
+</html>

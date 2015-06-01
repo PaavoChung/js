@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.all{ width:200px; height:600px; background:#8B8B8B; position:absolute; top:0;left:-200px;}
+.all span{ width:50px; height:50px; background:#000000; position:absolute; top:0; right:-50px;cursor: pointer;}
+</style>
+<script>
+	window.onload=function(){
+		var box=document.getElementById('box')
+		var myspan=document.getElementById('myspan')
+		var bl=true
+		myspan.onclick=function(){
+			if(bl==true){
+				box.style.left='0'
+				bl=false //设置为假
+				
+			}else{
+				box.style.left='-200px'
+				bl=true //设置为真
+
+			}
+		}
+		
+	}
+</script>
+</head>
+
+<body>
+
+<div class="all" id="box">
+	<span id="myspan"></span>
+</div>
+</body>
+</html>

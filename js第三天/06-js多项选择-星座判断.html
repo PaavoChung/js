@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.all{ width:500px; height:50px; background:pink; border: 1px solid red;  text-align: center; line-height: 50px; margin:100px auto; border-radius:5px;}
+</style>
+<script>
+	window.onload=function(){
+	 var txt=document.getElementById('txt')	
+	 var btn=document.getElementById('btn')	
+	 btn.onclick=function(){
+		 var user=txt.value
+		// alert(user)
+		if(user=='水瓶座'){ //各种if  else  各种复制
+			alert('思想超前，理性自重的星座。一样的不爱受约束，一样的博爱，但他们还是不同射手座；他们较著重於精神层次的提升，是很好的启发对象。')}
+		else if(user=='双鱼座'){
+			alert('多愁敏感，爱作梦、幻想的星座。天生多情，使他们常为情字挣扎，情绪的波动起伏也跟脱不了关系；但他们生性柔弱，很喜欢奉献，也不会随意伤人。')}
+			else if(user=='白羊座'){
+			alert('精力旺盛、活力充沛的星座。性格与爱情多数“横冲直撞”，但纯真的个性里没有杀伤力，所以不用太担心。')}
+			else if(user=='金牛座'){
+			alert('慢条斯理的星座。凡事总是考虑后再过滤，属於大器晚成型，情思也比较晚开。他们有超人的稳定性，一旦下赌注，就有把握赢。')}
+			else if(user=='双子座'){
+			alert('变化速度快如风的星座。双子的双重性格常搞的别人和自己头痛万分，对於事业与爱情，如果肯多花点心思经营，应该会是很好的，但...他们实在是太机灵了。')}
+			else if(user=='巨蟹座'){
+			alert('非常需要爱与安定的星座。爱猜疑的个性，使他们在人生旅途上处处显得缺乏安全感。但是带著母爱光辉的巨蟹，为了所爱倒是心甘情愿的付出。')}
+			else if(user=='狮子座'){
+			alert('讲究气派华丽的星座。狮子是森林之王，理所当然喜欢呼朋引伴，有些耐不住寂寞。他们有冲劲，虽然粗枝大叶，但为人讲义气，也蛮有人缘。')}
+			else if(user=='处女座'){
+			alert('有点挑剔又追求完美的星座。缺乏信心的个性，常在潜意识里责怪自己不够美好；虽然难免会使心情沈重，但天生的优点就是放得开，不会就此一蹶不振。')}
+			else if(user=='天秤座'){
+			alert('爱美又怕空虚的星座。凭借天生的外交本领，能在各色人物之间周旋；但有时也回因为过于顾虑面面俱到，而搞的自己吃力不讨好，脑筋常常转来转去，当心神经衰弱。')}
+			else if(user=='天蝎座'){
+			alert('神秘诡谲，令人费疑猜的星座。他们可以很执著，也可以很破坏；在爱情的国度里黑白分明，没有灰色地带，他们对於自己的目标相当清楚，一旦确立就往前冲。')}
+			else if(user=='射手座'){
+			alert('自由浪漫也滥情的星座。不爱受约束的个性使他们很怕被捆绑，多情的天性也使他们四处寻求猎物；性情天真，常会伤了人也不自觉，爱他们～就由他们去吧！')}
+			else if(user=='摩羯座'){
+			alert('严谨刻板，稳重老成的星座。虽然他们一向给人呆板的印象，但是呆板的人普遍说来不太耍花样；不管是在事业或爱情上，他们也都以这份特殊气质获胜！')}
+			
+			
+			else{ alert('请输入正确的星座：如双子座，水瓶座')}
+	  }
+		
+		function getKey(){
+			if(event.keyCode==13){
+				alert('click enter');
+			}	
+		}
+//
+//	function EnterPress(e){
+//		var e=e||window.event;
+//		if(e.keyCode==13){
+//			document.getElementById('txt').focus();
+//			}
+//		}
+		
+	}
+</script>
+
+</head>
+
+<body>
+<div class="all">
+	<span>请输入您的星座：</span>
+	<input type="text" id="txt" value="请输入星座"  onKeyPress="getKey();">
+	<button id="btn">确定</button>
+</div>
+</body>
+</html>

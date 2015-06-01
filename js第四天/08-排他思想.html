@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.current{ background:#FF5558;}
+</style>
+<script>
+	window.onload=function(){
+		var btns=document.getElementsByTagName('button')
+		for( var i=0;i<btns.length;i++){
+			btns[i].onclick=function(){
+				for( var i=0;i<btns.length;i++){ //清除全部颜色
+					btns[i].className=''		 //清除全部颜色
+				}
+				this.className='current'		//点亮当前颜色
+			}
+		}
+	}
+</script>
+
+</head>
+
+<body>
+
+<button>第一</button>
+<button>第二</button>
+<button>第三</button>
+<button>第四</button>
+<button>第五</button>
+</body>
+</html>

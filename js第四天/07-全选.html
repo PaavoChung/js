@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	window.onload=function(){
+	var buts=document.getElementsByTagName('button')
+	var inputs=document.getElementsByTagName('input')
+	
+	buts[0].onclick=function(){
+		for(var i=0;i<inputs.length;i++){
+				inputs[i].checked=true
+		}
+	}
+	
+	buts[1].onclick=function(){
+		for(var i=0;i<inputs.length;i++){
+				inputs[i].checked=false
+		}
+	}
+	
+	buts[2].onclick=function(){
+		for(var i=0;i<inputs.length;i++){
+				//inputs[i].checked=false
+				if(inputs[i].checked==true){
+					inputs[i].checked=!true
+				}else{
+					inputs[i].checked=true
+					}
+		}
+	}
+}
+</script>
+
+</head>
+
+<body>
+<button>全选</button><br>
+<button>取消全选</button><br>
+<button>反选</button><br>
+<input type="checkbox" name="" id="">1<br>
+<input type="checkbox" name="" id="">2<br>
+<input type="checkbox" name="" id="">3<br>
+<input type="checkbox" name="" id="">4<br>
+<input type="checkbox" name="" id="">5<br>
+
+</body>
+</html>

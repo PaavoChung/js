@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	div{ width:100px; height:100px; background:#F4575A; border: 1px solid #000;}
+</style>
+<script>
+	window.onload=function(){
+		function getid(getid01){
+			var getid=document.getElementById( getid01 )
+			return getid; //返回
+		}
+		getid('box1').style.background='#000' //改变背景
+		getid('box2').style.background='#000'
+		getid('box3').style.background='#000'
+	}
+</script>
+</head>
+
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	*{margin:0; padding:0; list-style:none;}
+	.box{width:400px; height:auto; margin:100px auto;}
+	.box li{height:30px;line-height:30px;text-align:center; border:1px solid #000; background:#999; cursor:pointer;}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<ul>
+    	<li id="dj01">鼠标单击</li>
+        <li id="dj02">鼠标双击</li>
+        <li id="dj03">鼠标经过</li>
+        <li id="dj04">鼠标移开</li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+var dj01 =document.getElementById('dj01');
+var dj02 =document.getElementById('dj02');
+var dj03 =document.getElementById('dj03');
+var dj04 =document.getElementById('dj04');
+
+dj01.onclick = function(){   //鼠标单击事件
+	alert('单击事件捕获成功')
+	}
+dj02.ondblclick = function(){
+	alert('双击事件捕获成功')
+	}
+dj03.onmouseover = function(){
+	alert('鼠标移上事件捕获成功')
+	}
+dj04.onmouseout = function(){
+	alert('鼠标离开事件捕获成功')
+	}			
+</script>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+.all{ width:360px; height:70px; background:url(img/taobao/03big.jpg) no-repeat; padding-top:360px; margin:100px auto;border:1px solid #ccc;}
+.all li{float:left; cursor: pointer;}
+
+</style>
+<script>
+	window.onload=function(){
+		
+	function fn(chanshu,lujin){//自定义函数，楼下的就是自定义赋值，要传到function小括号里面哈
+	  var li01=document.getElementById(chanshu);
+	  var box=document.getElementById('box');
+	 li01.onmouseover =function(){//鼠标移动上去的方法
+		box.style.background =lujin
+	    }
+	  }	
+	  fn('li01','url(img/taobao/01big.jpg) no-repeat')
+	  fn('li02','url(img/taobao/02big.jpg) no-repeat')
+	  fn('li03','url(img/taobao/03big.jpg) no-repeat')
+	  fn('li04','url(img/taobao/04big.jpg) no-repeat')
+	  fn('li05','url(img/taobao/05big.jpg) no-repeat')
+
+	}
+</script>
+</head>
+
+<body>
+<div class="all" id="box">
+	<ul>
+		<li id="li01"><img src="img/taobao/01.jpg" width="70" height="70" alt=""/></li>
+		<li id="li02"><img src="img/taobao/02.jpg" width="70" height="70" alt=""/></li>
+		<li id="li03"><img src="img/taobao/03.jpg" width="70" height="70" alt=""/></li>
+		<li id="li04"><img src="img/taobao/04.jpg" width="70" height="70" alt=""/></li>
+		<li id="li05"><img src="img/taobao/05.jpg" width="70" height="70" alt=""/></li>
+	</ul>
+</div>
+
+</body>
+</html>

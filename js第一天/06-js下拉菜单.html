@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+a{ text-decoration:none; color:#000; }
+a:hover{ color:#ccc;}
+a:visted{ color:#000;}
+.all{ width:100px; height:auto; border:1px solid #ccc; margin:100px auto; text-align:center;}
+.all span{ display:block; line-height:24px; background:url(img/down.gif) no-repeat 10px 50%; cursor:pointer;}
+.all ul{ display:none;}
+</style>
+</head>
+
+<body>
+<div class="all" id="all01" >
+	<span id="shop" ><a href="#">购物</a></span>
+    <ul id="xl">
+    	<li><a href="#">水果</a></li>
+    	<li><a href="#">蔬菜</a></li>
+    	<li><a href="#">日用品</a></li>
+    	<li><a href="#">百货</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
+<script>
+	var all01 = document.getElementById('all01')  //赋值
+	var xl = document.getElementById('xl')
+	var shop = document.getElementById('shop')
+	all01.onmouseover=function(){
+		xl.style.display='block'  //鼠标移上去改变样式，显示下拉列表
+		shop.style.background='url(img/up.gif) no-repeat 10px 50%'  //改变背景图
+		}
+	all01.onmouseout=function(){
+		xl.style.display='none'   //鼠标移走改变样式，下拉列表隐藏
+		shop.style.background='url(img/down.gif) no-repeat 10px 50%'
+		}	
+</script>

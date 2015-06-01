@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+
+</style>
+
+<script>
+	window.onload=function(){
+		var names=['11','12','13','14','15','16','17','18','19','10']
+		var mz=document.getElementById('mz')
+		var shuzu= parseInt(Math.random()*names.length) //随机数
+		mz.innerHTML=names[shuzu]//输出随机数
+		
+	}
+</script>
+
+</head>
+
+<body>
+<h1 id="mz"></h1>
+</body>
+</html>

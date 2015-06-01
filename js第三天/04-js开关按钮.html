@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.all{ width:200px; height:600px; background:#8B8B8B; position:absolute; top:0;left:-200px;}
+.all span{ width:50px; height:50px; background:#000000; position:absolute; top:0; right:-50px;cursor: pointer;}
+</style>
+<script>
+	window.onload=function(){
+		var box=document.getElementById('box')
+		var myspan=document.getElementById('myspan')
+		var zt='折叠'
+		myspan.onclick=function(){
+			if(zt=='折叠'){ //如果折叠
+				box.style.left='0'  //左边为0，显示出来
+				zt='展开'  //设置状态为展开
+				
+			}else{//否则
+				box.style.left='-200px'//左边为-200px 不显示，隐藏在左边了
+				zt='折叠'  //设置状态为折叠
+
+			}
+		}
+		
+	}
+</script>
+</head>
+
+<body>
+
+<div class="all" id="box">
+	<span id="myspan"></span>
+</div>
+</body>
+</html>

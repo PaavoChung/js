@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.dh{ width:200px; height:100px; margin:100px auto; background:#FFB6B7; position:relative;}
+.dh span{ width:20px; height:20px; border-radius:50%; background:#D40003; position:absolute;}
+#y01{ left:0px; top:0px;}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="dh" id="all001">
+	<span class="y001" id="y01"></span>
+	
+</div>
+
+</body>
+</html>
+<script language="javascript">
+	
+		var y01=document.getElementById('y01')
+		var all001=document.getElementById('all001')
+		//var y02 =document.getElementById('y02')
+		var num = 0;
+		var timer=null
+			
+		clearInterval(timer)
+		timer=setInterval( function(){
+				//alert('ok')
+				num=num+5;
+				//y01.innerHTML = num;
+				y01.style.left = num +'px';
+				 if(num==185){
+					clearInterval(timer)
+					num=num-5; 
+					y01.style.left = '-'+num +'px';
+				  }
+				
+				},30)	
+
+		//window.onload=MyAutoRun;
+	
+</script>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.all{width:500px;height:50px;background:pink;border:1px solid red; text-align:center; line-height:50px; margin:100px auto;}
+</style>
+<script>
+	window.onload=function(){
+		var btn=document.getElementById('btn')
+		var num=3;
+		var timer=null
+		btn.onclick=function(){
+			//btn.innerHTML='请重试'
+			clearInterval(timer)
+			timer=setInterval(function(){
+				//num>=0&&num<=3;
+				num--;
+				//num=num-1
+				btn.innerHTML=num+'秒后重试'	
+				btn.disabled=true;
+				if(num==0){
+					clearInterval(timer)
+					btn.innerHTML='发送验证码'	
+					num=3
+					btn.disabled=false;
+					}
+			},1000)	
+		}
+	}
+</script>
+
+
+</head>
+
+<body>
+<div class="all">
+	
+	<input type="text" id="txt" value=""/>
+	<button id="btn">发送验证码</button>
+</div>
+</body></html>

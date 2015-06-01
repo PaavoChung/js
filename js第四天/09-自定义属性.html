@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+li{ background: #F86E70; border: 1px solid #000; list-style: none;}
+</style>
+<script>
+	window.onload=function(){
+		var lis=document.getElementsByTagName('li')
+		for(var i=0; i<lis.length; i++){
+			lis[i].index=i;  //把索引值赋给lis[i]
+			lis[i].onclick=function(){
+				alert(this.index)	//输出当前点击的索引值
+			}	
+		}
+	}
+</script>
+</head>
+
+<body>
+<ul>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+	<li>盒子</li>
+</ul>
+
+</body>
+</html>

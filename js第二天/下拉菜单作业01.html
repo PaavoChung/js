@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0px; padding:0px; list-style: none;}
+a{ text-decoration: none; color: #000;}
+.nav{ width:340px; height:30px; margin:100px auto;text-align:center; }
+.nav ul li{ float:left; width:100px; margin-left:10px; line-height:30px; background:#FB7274; border-radius:5px; position:relative;}
+.nav ul li ul{ margin-left:-10px; display:none;}
+.ll{ width:300px; height:100px; margin:0 auto; background:#F75356;}
+/*#two_ul_01,#two_ul_02,#two_ul_03{ margin-left:-10px; display:none;}*/</style>
+<script>
+	window.onload=function(){
+	function fn(nav,nav_2){
+		var nav = document.getElementById(nav)
+		var nav_2 = document.getElementById(nav_2)
+		nav.onmouseover=function(){
+			nav_2.style.display='block'
+			}
+		nav.onmouseout=function(){
+			nav_2.style.display='none'
+			}	
+		
+		}	
+		fn('one_li_01','two_ul_01')
+		fn('one_li_02','two_ul_02')
+		fn('one_li_03','two_ul_03')
+		
+	}
+</script>
+
+</head>
+
+<body>
+<div class="nav">
+	<ul>
+		<li id="one_li_01"><a href="#">一级菜单</a>
+        	<ul id="two_ul_01">
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            </ul>
+        </li>
+		<li id="one_li_02"><a href="#">一级菜单</a>
+        	<ul id="two_ul_02">
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            </ul>
+        </li>
+		<li id="one_li_03"><a href="#">一级菜单</a>
+        	<ul id="two_ul_03">
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            	<li><a href="#">二级菜单</a></li>
+            </ul>
+        </li>
+	</ul>
+</div>
+<div class="ll"></div>
+</body>
+</html>
